@@ -13,4 +13,4 @@ else
 {
     console.log("Objective-C Runtime is not available!");
 }
-console.log("[*] Completed: Find Classes")
+console.log("[*] Completed: Find Classes");

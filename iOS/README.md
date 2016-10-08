@@ -14,3 +14,11 @@
 |show-method-return-value.js|Show return value of a particular method inside a class|
 
 ```Note: Terminologies used for description might be off.```
+
+##Executing Frida Scripts
+
+If you try to run the scripts as a file from command line (```frida -U -p 1234 -l test_script.js```) then it will get terminated if execution time exceeds 28 seconds.
+
+I recommend attaching to the target app's process and then pasting the Frida script code you want to execute.
+
+You can also utilize the Python script for executing the Frida script code.

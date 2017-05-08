@@ -14,6 +14,10 @@ if (ObjC.available)
             console.log("\t[-] Type of return value: " + typeof retval);
             //console.log(retval.toString());
             console.log("\t[-] Return Value: " + retval);
+            //For modifying the return value
+            //newretval = ptr("0x0") //your new return value here
+            //retval.replace(newretval)
+            //console.log("\t[-] New Return Value: " + newretval)
           }
         });
     }

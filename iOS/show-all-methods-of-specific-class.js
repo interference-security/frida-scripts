@@ -9,6 +9,7 @@ function show_functions_of_specific_class(className_arg)
         console.log("[-] "+methods[i]);
         count = count + 1
     }
+    console.log("\n[*] Functions Found:" + count);
     console.log("[*] Completed: Find All Methods of a Specific Class");
 }
 //Your class name here

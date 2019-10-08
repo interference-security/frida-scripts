@@ -1,33 +1,15 @@
-console.log("[*] Started: Find All Methods of a Specific Class");
-if (ObjC.available)
+function show_functions_of_specifc_class(className_arg)
 {
-    try
+    console.log("[*] Started: Find All Methods of a Specific Class");
+    var className = className_arg;
+    count = 0;
+    var methods = eval('ObjC.classes.' + className + '.$methods');
+    for (var i = 0; i < methods.length; i++)
     {
-        //Your class name here
-        var className = "YOUR_CLASS_NAME_HERE";
-        count = 0;
-        var methods = eval('ObjC.classes.' + className + '.$methods');
-        for (var i = 0; i < methods.length; i++)
-        {
-            try
-            {
-                console.log("[-] "+methods[i]);
-                count = count + 1
-            }
-            catch(err)
-            {
-                console.log("[!] Exception1: " + err.message);
-            }
-        }
+        console.log("[-] "+methods[i]);
+        count = count + 1
     }
-    catch(err)
-    {
-        console.log("[!] Exception2: " + err.message);
-    }
-    console.log("\n[*] Methods found: " + count);
+    console.log("[*] Completed: Find All Methods of a Specific Class");
 }
-else
-{
-    console.log("Objective-C Runtime is not available!");
-}
-console.log("[*] Completed: Find All Methods of a Specific Class");
+//Your class name here
+show_functions_of_specifc_class("YOUR_CLASS_NAME_HERE");

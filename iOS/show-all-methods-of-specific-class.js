@@ -1,4 +1,4 @@
-function show_functions_of_specifc_class(className_arg)
+function show_functions_of_specific_class(className_arg)
 {
     console.log("[*] Started: Find All Methods of a Specific Class");
     var className = className_arg;
@@ -12,4 +12,4 @@ function show_functions_of_specifc_class(className_arg)
     console.log("[*] Completed: Find All Methods of a Specific Class");
 }
 //Your class name here
-show_functions_of_specifc_class("YOUR_CLASS_NAME_HERE");
+show_functions_of_specific_class("YOUR_CLASS_NAME_HERE");

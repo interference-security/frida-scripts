@@ -1,6 +1,6 @@
-console.log("[*] Started: Find Classes")
-if (ObjC.available)
+function show_classes_of_app()
 {
+    console.log("[*] Started: Find Classes")
     count = 0
     for (var className in ObjC.classes)
     {
@@ -10,9 +10,7 @@ if (ObjC.available)
             count = count + 1
         }
     }
-    console.log("Classes found: " + count);
+    console.log("\n[*] Classes found: " + count);
+    console.log("[*] Completed: Find Classes")
 }
-else
-{
-    console.log("Objective-C Runtime is not available!");
-}
+show_classes_of_app()

@@ -1,7 +1,7 @@
 function show_classes_of_app()
 {
     console.log("[*] Started: Find Classes")
-    count = 0
+    var count = 0
     for (var className in ObjC.classes)
     {
         if (ObjC.classes.hasOwnProperty(className))

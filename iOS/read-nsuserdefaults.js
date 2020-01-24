@@ -4,8 +4,8 @@ if (ObjC.available)
 {
     try
     {
-        NSUserDefaults = ObjC.classes.NSUserDefaults;
-        NSDictionary = NSUserDefaults.alloc().init().dictionaryRepresentation();
+        var NSUserDefaults = ObjC.classes.NSUserDefaults;
+        var NSDictionary = NSUserDefaults.alloc().init().dictionaryRepresentation();
         console.log(NSDictionary.toString())
     }
     catch(err)

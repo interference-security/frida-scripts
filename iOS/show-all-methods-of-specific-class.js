@@ -2,7 +2,7 @@ function show_functions_of_specific_class(className_arg)
 {
     console.log("[*] Started: Find All Methods of a Specific Class");
     var className = className_arg;
-    count = 0;
+    var count = 0;
     var methods = eval('ObjC.classes.' + className + '.$methods');
     for (var i = 0; i < methods.length; i++)
     {

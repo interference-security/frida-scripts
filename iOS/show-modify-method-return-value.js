@@ -11,7 +11,7 @@ function show_modify_function_return_value(className_arg, funcName_arg)
         //console.log(retval.toString());
         console.log("\t[-] Return Value: " + retval);
         //For modifying the return value
-        newretval = ptr("0x0") //your new return value here
+        var newretval = ptr("0x0") //your new return value here
         retval.replace(newretval)
         console.log("\t[-] New Return Value: " + newretval)
       }

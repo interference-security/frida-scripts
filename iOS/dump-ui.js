@@ -2,7 +2,7 @@
 console.warn("[*] Started: Dumping UI")
 if (ObjC.available)
 {
-    current_window = ObjC.classes.UIWindow.keyWindow()
+    var current_window = ObjC.classes.UIWindow.keyWindow()
     console.log(current_window.recursiveDescription().toString());
 }
 else

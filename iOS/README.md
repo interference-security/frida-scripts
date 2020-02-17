@@ -11,6 +11,7 @@
 |frida_without_jailbreak_ipa.png|Screenshot from Reddit for using Frida without jailbreak|
 |hook-all-methods-of-specific-class.js|Hook all the methods of a particular class|
 |hook-specific-method-of-class.js|Hook a particular method of a specific class|
+|ios-app-static-analysis.js|iOS app static analysis|
 |pasteboard-monitoring.js|Monitor usage of pasteboard. Useful to show lack of secure attribute on sensitive fields allowing data copying.|
 |read-nsuserdefaults.js|Show contents fo NSUserDefaults|
 |show-all-methods-of-specific-class.js|Dump all methods of a particular class|

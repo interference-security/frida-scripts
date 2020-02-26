@@ -13,7 +13,8 @@
 |hook-specific-method-of-class.js|Hook a particular method of a specific class|
 |ios-app-static-analysis.js|iOS app static analysis|
 |pasteboard-monitoring.js|Monitor usage of pasteboard. Useful to show lack of secure attribute on sensitive fields allowing data copying.|
-|read-nsuserdefaults.js|Show contents fo NSUserDefaults|
+|read-nsuserdefaults.js|Show contents of NSUserDefaults|
+|read-plist-file.js|Show contents of a Plist file|
 |show-all-methods-of-specific-class.js|Dump all methods of a particular class|
 |show-argument-type-count-and-return-value-type.js|Show argument type & count and type of return value for a function in a class|
 |show-instance-variables-for-specific-class.js|Show all instance variables of a particular class|

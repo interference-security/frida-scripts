@@ -1,4 +1,4 @@
-function show_classes_of_app()
+function run_show_classes_of_app()
 {
     console.log("[*] Started: Find Classes")
     var count = 0
@@ -13,4 +13,10 @@ function show_classes_of_app()
     console.log("\n[*] Classes found: " + count);
     console.log("[*] Completed: Find Classes")
 }
+
+function show_classes_of_app()
+{
+	setImmediate(run_show_classes_of_app)
+}
+
 show_classes_of_app()

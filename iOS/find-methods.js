@@ -1,21 +1,25 @@
-console.log("[*] Started: Find Methods")
-if (ObjC.available)
+function run_show_classes_methods_of_app()
 {
-    for (var className in ObjC.classes)
-    {
-        if (ObjC.classes.hasOwnProperty(className))
-        {
-            console.log("[+] Class: " + className);
-            var methods = eval('ObjC.classes.' + className + '.$methods');
-            for (var i = 0; i < methods.length; i++)
-            {
-                console.log("\t[-] Method: "+methods[i]);
-            }
-        }
-    }
+    console.log("[*] Started: Find Methods of All Classes")
+	for (var className in ObjC.classes)
+	{
+		if (ObjC.classes.hasOwnProperty(className))
+		{
+			console.log("[+] Class: " + className);
+			//var methods = ObjC.classes[className].$methods;
+			var methods = ObjC.classes[className].$ownMethods;
+			for (var i = 0; i < methods.length; i++)
+			{
+				console.log("\t[-] Method: "+methods[i]);
+			}
+		}
+	}
+	console.log("[*] Completed: Find Methods of All Classes")
 }
-else
+
+function show_classes_methods_of_app()
 {
-    console.log("Objective-C Runtime is not available!");
+	setImmediate(run_show_classes_methods_of_app)
 }
-console.log("[*] Completed: Find Methods")
+
+show_classes_methods_of_app()

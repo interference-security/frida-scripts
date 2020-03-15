@@ -1,4 +1,6 @@
 //Source: http://www.mopsled.com/2015/log-ios-method-arguments-with-frida/
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 if (ObjC.available)
 {
     try

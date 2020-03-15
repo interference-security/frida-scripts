@@ -4,6 +4,7 @@
 |:---|:---|
 |dump-ios-url-scheme.js|Dump iOS url scheme when "openURL" is called|
 |dump-ui.js|Dump the current on-screen User Interface structure|
+|find-app-classes.js|Dump classes owned by the app only|
 |find-classes.js|Dump all classes used by the app|
 |find-methods.js|Dump all methods inside all classes|
 |find-specific-method.js|Find a specific method in all classes|

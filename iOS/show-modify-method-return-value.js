@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function show_modify_function_return_value(className_arg, funcName_arg)
 {
     var className = className_arg;

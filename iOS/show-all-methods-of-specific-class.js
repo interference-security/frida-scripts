@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function run_show_functions_of_specific_class(className_arg)
 {
     console.log("\n[*] Started: Find All Methods of a Specific Class");

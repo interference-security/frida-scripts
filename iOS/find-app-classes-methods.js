@@ -21,13 +21,13 @@ function run_show_app_classes_methods_only()
 		console.log("[+] Class: " + className);
 		//var methods = ObjC.classes[className].$methods;
 		var methods = ObjC.classes[className].$ownMethods;
-		for (var i = 0; i < methods.length; i++)
+		for (var j = 0; j < methods.length; j++)
 		{
-			console.log("\t[-] Method: " + methods[i]);
+			console.log("\t[-] Method: " + methods[j]);
 			try
 			{
-				console.log("\t\t[-] Arguments Type: " + ObjC.classes[className][methods[i]].argumentTypes);
-				console.log("\t\t[-] Return Type: " + ObjC.classes[className][methods[i]].returnType);
+				console.log("\t\t[-] Arguments Type: " + ObjC.classes[className][methods[j]].argumentTypes);
+				console.log("\t\t[-] Return Type: " + ObjC.classes[className][methods[j]].returnType);
 			}
 			catch(err) {}
 		}

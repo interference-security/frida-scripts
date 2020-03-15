@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function start_pasteboard_monitoring(interval_value)
 {
     var pasteboard = (ObjC.classes.UIPasteboard).generalPasteboard();

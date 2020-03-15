@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function hook_class_method(class_name, method_name)
 {
 	var hook = eval('ObjC.classes.'+class_name+'["'+method_name+'"]');

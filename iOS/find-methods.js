@@ -1,52 +1,27 @@
 //Twitter: https://twitter.com/xploresec
 //GitHub: https://github.com/interference-security
-function run_find_specific_method_in_all_classes(func_name)
+function run_show_classes_methods_of_app()
 {
-	console.log("[*] Started: Find Specific Method in All Classes");
+    console.log("[*] Started: Find Methods of All Classes")
 	for (var className in ObjC.classes)
 	{
-		try
+		if (ObjC.classes.hasOwnProperty(className))
 		{
-			if (ObjC.classes.hasOwnProperty(className))
+			console.log("[+] Class: " + className);
+			//var methods = ObjC.classes[className].$methods;
+			var methods = ObjC.classes[className].$ownMethods;
+			for (var i = 0; i < methods.length; i++)
 			{
-				try
-				{
-					//var methods = ObjC.classes[className].$methods;
-					var methods = ObjC.classes[className].$ownMethods;
-					for (var i = 0; i < methods.length; i++)
-					{
-						try
-						{
-							if(methods[i].includes(func_name))
-							{
-								console.log("[+] Class: " + className);
-								console.log("\t[-] Method: "+methods[i]);
-							}
-						}
-						catch(err)
-						{
-							console.log("[!] Exception3: " + err.message);
-						}
-					}
-				}
-				catch(err)
-				{
-					console.log("[!] Exception2: " + err.message);
-				}
+				console.log("\t[-] Method: "+methods[i]);
 			}
 		}
-		catch(err)
-		{
-			console.log("[!] Exception1: " + err.message);
-		}
 	}
-	console.log("[*] Completed: Find Specific Method in All Classes");
+	console.log("[*] Completed: Find Methods of All Classes")
 }
 
-function find_specific_method_in_all_classes(func_name)
+function show_classes_methods_of_app()
 {
-	setImmediate(run_find_specific_method_in_all_classes,[func_name])
+	setImmediate(run_show_classes_methods_of_app)
 }
 
-//Your function name goes here
-find_specific_method_in_all_classes("function_name_here")
+show_classes_methods_of_app()

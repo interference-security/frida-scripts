@@ -1,4 +1,6 @@
-//Credit: https://github.com/sensepost/objection/blob/b39ee53b5ba2e9a271797d2f3931d79c46dccfdb/objection/commands/ios/nsuserdefaults.py
+//Credit: Objection (https://github.com/sensepost/objection/blob/master/objection/commands/ios/nsuserdefaults.py)
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 console.warn("[*] Started: Read NSUserDefaults PLIST file");
 if (ObjC.available)
 {

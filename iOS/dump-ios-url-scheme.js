@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 // Get a reference to the openURL selector
 var openURL = ObjC.classes.UIApplication["- openURL:"];
 

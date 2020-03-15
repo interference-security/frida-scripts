@@ -1,4 +1,6 @@
 //Credit: http://blog.itselectlab.com/?p=10485
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 console.warn("[*] Started: Dumping UI")
 if (ObjC.available)
 {

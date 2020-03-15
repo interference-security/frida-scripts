@@ -1,3 +1,6 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
+
 console.warn("[*] Show number and type of arguments for the function")
 //ObjC.classes.DamnVulnerableAppUtilities['+ showAlertForJailbreakTestIsJailbroken:'].argumentTypes
 ObjC.classes.CLASS_NAME_HERE["FUNCTION_NAME_HERE"].argumentTypes

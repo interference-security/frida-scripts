@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function run_show_classes_of_app()
 {
     console.log("[*] Started: Find Classes")

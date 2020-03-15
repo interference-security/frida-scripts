@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function read_plist_file(file_location)
 {
 	var dict = ObjC.classes.NSMutableDictionary

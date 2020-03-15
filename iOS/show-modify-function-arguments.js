@@ -1,3 +1,6 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
+
 //Your class name here
 var className = "YOUR_NAME_HERE";
 //Your function name here

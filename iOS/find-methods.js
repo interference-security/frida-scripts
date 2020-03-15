@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function run_find_specific_method_in_all_classes(func_name)
 {
 	console.log("[*] Started: Find Specific Method in All Classes");

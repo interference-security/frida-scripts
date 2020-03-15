@@ -4,9 +4,10 @@
 |:---|:---|
 |dump-ios-url-scheme.js|Dump iOS url scheme when "openURL" is called|
 |dump-ui.js|Dump the current on-screen User Interface structure|
+|find-all-classes-methods.js|Dump all methods inside all classes|
+|find-all-classes.js|Dump all classes used by the app|
+|find-app-classes-methods.js|Dump all methods inside classes owned by the app only|
 |find-app-classes.js|Dump classes owned by the app only|
-|find-classes.js|Dump all classes used by the app|
-|find-methods.js|Dump all methods inside all classes|
 |find-specific-method.js|Find a specific method in all classes|
 |frida_python_script.py|Python script to run Frida scripts|
 |frida_without_jailbreak_ipa.png|Screenshot from Reddit for using Frida without jailbreak|

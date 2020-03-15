@@ -11,6 +11,7 @@
 |find-specific-method.js|Find a specific method in all classes|
 |frida_python_script.py|Python script to run Frida scripts|
 |frida_without_jailbreak_ipa.png|Screenshot from Reddit for using Frida without jailbreak|
+|hook-all-methods-of-all-classes-app-only.js|Hook all the methods of all the classes owned by the app|
 |hook-all-methods-of-specific-class.js|Hook all the methods of a particular class|
 |hook-specific-method-of-class.js|Hook a particular method of a specific class|
 |ios-app-static-analysis.js|iOS app static analysis|

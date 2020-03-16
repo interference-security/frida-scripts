@@ -10,7 +10,7 @@ function app_meta_info(DEBUG)
 	console.warn("--------------------------------")
 	console.warn("|     App Meta Information     |")
 	console.warn("--------------------------------")
-	console.log("Bundle Name: " + ObjC.classes.NSBundle.mainBundle().infoDictionary().objectForKey_("CFBundleName").toString())
+	try { console.log("Bundle Name: " + ObjC.classes.NSBundle.mainBundle().infoDictionary().objectForKey_("CFBundleName").toString()) } catch(err) { if(DEBUG) { console.error("[!] Error: " + err.message); } }
 	try { console.log("Display Name: " + ObjC.classes.NSBundle.mainBundle().infoDictionary().objectForKey_("CFBundleDisplayName").toString()) } catch(err) { if(DEBUG) { console.error("[!] Error: " + err.message); } }
 	try { console.log("Executable Name: " + ObjC.classes.NSBundle.mainBundle().infoDictionary().objectForKey_("CFBundleExecutable").toString()) } catch(err) { if(DEBUG) { console.error("[!] Error: " + err.message); } }
 	try { console.log("Bundle Identifier: " + ObjC.classes.NSBundle.mainBundle().infoDictionary().objectForKey_("CFBundleIdentifier").toString()) } catch(err) { if(DEBUG) { console.error("[!] Error: " + err.message); } }

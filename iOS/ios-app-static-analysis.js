@@ -92,7 +92,13 @@ function show_url_scheme(DEBUG)
 	console.warn("--------------------------------")
 	console.warn("|         URL Schemes          |")
 	console.warn("--------------------------------")
-	var nsDictionary = ObjC.classes.NSBundle.mainBundle().infoDictionary().objectForKey_("CFBundleURLTypes").objectAtIndex_(0);
+	var nsDictionary = ObjC.classes.NSBundle.mainBundle().infoDictionary().objectForKey_("CFBundleURLTypes");
+	if(nsDictionary == null)
+	{
+		console.log("[*] URL scheme not defined by app")
+		return;
+	}
+	nsDictionary = nsDictionary.objectAtIndex_(0);
 	var dictKeys = nsDictionary.allKeys();
 	for(var i = 0; i < dictKeys.count(); i++)
 	{

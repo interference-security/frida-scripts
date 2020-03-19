@@ -14,6 +14,7 @@
 |hook-all-methods-of-all-classes-app-only.js|Hook all the methods of all the classes owned by the app|
 |hook-all-methods-of-specific-class.js|Hook all the methods of a particular class|
 |hook-specific-method-of-class.js|Hook a particular method of a specific class|
+|intercept-nslog.js|Intercept calls to Apple's NSLog logging function|
 |ios-app-static-analysis.js|iOS app static analysis|
 |pasteboard-monitoring.js|Monitor usage of pasteboard. Useful to show lack of secure attribute on sensitive fields allowing data copying.|
 |read-nsuserdefaults.js|Show contents of NSUserDefaults|

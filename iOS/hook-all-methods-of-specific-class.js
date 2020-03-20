@@ -2,7 +2,7 @@
 //GitHub: https://github.com/interference-security
 function hook_class_method(class_name, method_name)
 {
-	var hook = eval('ObjC.classes.'+class_name+'["'+method_name+'"]');
+	var hook = ObjC.classes[class_name][method_name];
 		Interceptor.attach(hook.implementation, {
 			onEnter: function(args) {
 			console.log("[*] Detected call to: " + class_name + " -> " + method_name);

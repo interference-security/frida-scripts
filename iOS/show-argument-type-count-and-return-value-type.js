@@ -5,11 +5,11 @@ function show_method_args_return_type(className, methodName)
 {
   console.warn("[*] Show number and type of arguments for the function")
   //ObjC.classes["DamnVulnerableAppUtilities"]["+ showAlertForJailbreakTestIsJailbroken:"].argumentTypes
-  ObjC.classes[className][methodName].argumentTypes
+  console.log(ObjC.classes[className][methodName].argumentTypes)
 
   console.warn("[*] Show type of return value for the function")
   //ObjC.classes["JailbreakDetectionVC"]["- isJailbroken"].returnType
-  ObjC.classes[className][methodName].returnType
+  console.log(ObjC.classes[className][methodName].returnType)
 }
 
 //Your class name and method name here

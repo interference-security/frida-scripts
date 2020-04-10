@@ -73,3 +73,4 @@ function hook_all_methods_of_classes_app_only(verbose)
 
 //hook_all_methods_of_classes_app_only()
 //hook_all_methods_of_classes_app_only("verbose") //for verbose output
+

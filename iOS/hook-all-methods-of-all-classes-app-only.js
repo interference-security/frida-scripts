@@ -17,7 +17,7 @@ function hook_class_method(class_name, method_name)
 	});
 }
 
-function run_hook_all_methods_of_classes_app_only()
+function run_hook_all_methods_of_classes_app_only(verbose)
 {
 	console.log("[*] Started: Hook all methods of all app only classes");
 	var free = new NativeFunction(Module.findExportByName(null, 'free'), 'void', ['pointer'])
@@ -47,7 +47,8 @@ function run_hook_all_methods_of_classes_app_only()
 					var funcName2 = methods[j];
 					//console.log("[-] Method: " + methods[j]);
 					hook_class_method(className2, funcName2);
-					//console.log("[*] [" + get_timestamp() + "] Hooking successful: " + className2 + " -> " + funcName2);
+					if (verbose)
+						console.log("[*] [" + get_timestamp() + "] Hooking successful: " + className2 + " -> " + funcName2);
 				}
 				catch(err)
 				{
@@ -62,7 +63,13 @@ function run_hook_all_methods_of_classes_app_only()
 
 function hook_all_methods_of_classes_app_only()
 {
-	setImmediate(run_hook_all_methods_of_classes_app_only)
+	setImmediate(run_hook_all_methods_of_classes_app_only,[false])
 }
 
-hook_all_methods_of_classes_app_only()
+function hook_all_methods_of_classes_app_only(verbose)
+{
+	setImmediate(run_hook_all_methods_of_classes_app_only,[true])
+}
+
+//hook_all_methods_of_classes_app_only()
+//hook_all_methods_of_classes_app_only("verbose") //for verbose output

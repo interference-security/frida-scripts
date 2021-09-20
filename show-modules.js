@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 function show_modules()
 {
 	var count = 0;

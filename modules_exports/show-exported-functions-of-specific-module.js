@@ -12,4 +12,4 @@ function show_specific_module_exported_functions(modulesName)
 }
 
 //Update module name in below line
-show_specific_module_exported_functions("MODULE_NAME_HERE")
+//show_specific_module_exported_functions("MODULE_NAME_HERE")

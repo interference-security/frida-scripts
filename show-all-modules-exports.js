@@ -1,3 +1,5 @@
+//Twitter: https://twitter.com/xploresec
+//GitHub: https://github.com/interference-security
 //Script to show modules and its exports. Works on both Android and iOS
 function show_modules_exports()
 {

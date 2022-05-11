@@ -56,27 +56,30 @@ function app_env_info(DEBUG)
 	var path_prefix = "/var/mobile/Containers/Data/Application/";
 	var plist_metadata = "/.com.apple.mobile_container_manager.metadata.plist";
 	var folders = ObjC.classes.NSFileManager.defaultManager().contentsOfDirectoryAtPath_error_(path_prefix, NULL);
-	for(var i = 0, l = folders.count(); i < l; i++)
+	if(folders != null)
 	{
-		var uuid = folders.objectAtIndex_(i);
-		var metadata = path_prefix + uuid + plist_metadata;
-		var dict = ObjC.classes.NSMutableDictionary.alloc().initWithContentsOfFile_(metadata);
-		var enumerator = dict.keyEnumerator();
-		var key;
-		while ((key = enumerator.nextObject()) !== null)
+		for(var i = 0, l = folders.count(); i < l; i++)
 		{
-			if(key == 'MCMMetadataIdentifier')
+			var uuid = folders.objectAtIndex_(i);
+			var metadata = path_prefix + uuid + plist_metadata;
+			var dict = ObjC.classes.NSMutableDictionary.alloc().initWithContentsOfFile_(metadata);
+			var enumerator = dict.keyEnumerator();
+			var key;
+			while ((key = enumerator.nextObject()) !== null)
 			{
-				var appId = String(dict.objectForKey_(key));
-				if(appId.indexOf(bundleIdentifier) != -1)
+				if(key == 'MCMMetadataIdentifier')
 				{
-					mainBundleContainerPathIdentifier = uuid;
-					break;
+					var appId = String(dict.objectForKey_(key));
+					if(appId.indexOf(bundleIdentifier) != -1)
+					{
+						mainBundleContainerPathIdentifier = uuid;
+						break;
+					}
 				}
 			}
 		}
+		console.log("App Container Path : /var/mobile/Containers/Data/Application/" + mainBundleContainerPathIdentifier + "/")
 	}
-	console.log("App Container Path : /var/mobile/Containers/Data/Application/" + mainBundleContainerPathIdentifier + "/")
 }
 function raw_app_info_plist(DEBUG)
 {
@@ -106,9 +109,9 @@ function show_url_scheme(DEBUG)
 		{
 			var urlSchemesString = "";
 			var nsArray = nsDictionary.objectForKey_("CFBundleURLSchemes");
-			for(var i = 0; i < nsArray.count(); i++)
+			for(var j = 0; i < nsArray.count(); j++)
 			{
-				urlSchemesString = urlSchemesString + nsArray.objectAtIndex_(i).toString() + ", ";
+				urlSchemesString = urlSchemesString + nsArray.objectAtIndex_(j).toString() + ", ";
 			}
 			urlSchemesString = urlSchemesString.substr(0, urlSchemesString.length - 2)
 			console.log("URL Schemes : " + urlSchemesString)
